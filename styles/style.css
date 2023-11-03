@@ -162,6 +162,12 @@ ul li:not(:last-child) {
   position: relative;
 }
 
+.content__accent-dash {
+  position: absolute;
+  top: 7px;
+  left: 92px;
+}
+
 .content__accent span:last-child {
   padding-bottom: 5px;
   width: 100px;
