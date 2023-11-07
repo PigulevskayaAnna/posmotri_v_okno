@@ -16,6 +16,8 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
 }
 
 h1,
@@ -64,7 +66,6 @@ button:focus {
 .content {
   display: flex;
   gap: 30px;
-  padding-top: 133px;
   padding-left: 30px;
 }
 
