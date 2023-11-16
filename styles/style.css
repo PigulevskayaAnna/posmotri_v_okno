@@ -42,7 +42,7 @@ ol {
 button {
   width: 100%;
   border: 1px solid #FFF;
-  height: 34px;
+  min-height: 34px;
   background-color: transparent;
   color: #fff;
   font-size: 18px;
@@ -238,18 +238,18 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   border: 1px solid #fff;
   width: 19px;
   height: 19px;
-  background: #1B1919;
+  background: transparent;
   vertical-align: sub;
   margin-left: 1px;
 }
 
 .search-form__pseudo-checkbox::before {
   content: '';
-  display: inline-block;
+  display: block;
   background: #fff;
   transform: scale(0);
   transition: 0.2s ease-in;
