@@ -16,8 +16,6 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;
-  align-items: center;
 }
 
 h1,
@@ -42,7 +40,7 @@ ol {
 button {
   width: 100%;
   border: 1px solid #FFF;
-  min-height: 34px;
+  height: 34px;
   background-color: transparent;
   color: #fff;
   font-size: 18px;
@@ -66,6 +64,7 @@ button:focus {
 .content {
   display: flex;
   gap: 30px;
+  padding-top: 133px;
   padding-left: 30px;
 }
 
@@ -163,7 +162,6 @@ ul li:not(:last-child) {
   position: relative;
 }
 
-
 .content__accent span:last-child {
   padding-bottom: 5px;
   width: 100px;
@@ -186,7 +184,13 @@ ul li:not(:last-child) {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 fieldset {
@@ -238,18 +242,18 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   border: 1px solid #fff;
   width: 19px;
   height: 19px;
-  background: transparent;
+  background: #1B1919;
   vertical-align: sub;
   margin-left: 1px;
 }
 
 .search-form__pseudo-checkbox::before {
   content: '';
-  display: block;
+  display: inline-block;
   background: #fff;
   transform: scale(0);
   transition: 0.2s ease-in;
